@@ -108,7 +108,13 @@ form.form-inline.logout {
 
 /*Home*/
 /*Ask*/
-.ask-form input {
+.question-container {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 20px;
+}
+.question-form input {
     background: transparent;
     border: 0;
     border-bottom: 1px solid #e3e3e3;
@@ -118,19 +124,20 @@ form.form-inline.logout {
     padding: 1rem 0 .5rem;
     outline: none;
 }
-.btn-ask {
+.btn-question {
   padding: .5rem 1.5rem;
   color: #fff;
   background-color: #b92b27;
 }
-.btn-ask:hover {
+.btn-question:hover {
   background-color: #94211e
 }
 
-/*Questions*/
-.question-container {
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    margin: 20px;
+/*Answers*/
+.answer-container {
+
+}
+.answer-form input {
+  width: 100%;
+  margin: 1rem 0;
 }
