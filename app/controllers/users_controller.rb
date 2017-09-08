@@ -1,8 +1,8 @@
 post '/signup' do
   user = User.new(params[:user])
   if user.save
-    # what should happen if the user is saved?
-    p "Hello World"
+    session[:user_id] = user.id
+    erb :"static/home"
   else
     @users = User.all
     @errors = user.errors.messages
