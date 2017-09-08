@@ -2,8 +2,8 @@ class CreateAnswers < ActiveRecord::Migration[5.0]
 	def change
 		create_table :answers do |t|
 			t.string :answer
-			t.belongs_to :user, index:true
-			t.belongs_to :question, index:true
+			t.belongs_to :user, index:true, foreign_key:true
+			t.belongs_to :question, index:true, foreign_key:true
 		end
 	end
 end
