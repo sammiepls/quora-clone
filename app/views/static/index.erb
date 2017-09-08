@@ -15,7 +15,7 @@
             <div class='col-6'>
               <div class='signup px-2'>
                 <h3 class="my-3">Sign up for an account!</h3>
-                <form method="post" action="/signup">
+                <form method="post" action="/users">
                   <div class='form-group row'>
                     <div class='col-6 my-2'>
                       <label>First Name</label>
@@ -33,6 +33,9 @@
                         <label>Password</label>
                         <input class="form-control-sm" type="password" placeholder="Password" name="user[password]">
                       </div>
+                      <!-- When you use name="user[password]", then it will help you do
+                       User.new(password: params[:user][:password]) automatically when you do
+                      User.new(params[:password])-->
                       <div class='col-12 my-2'>
                         <label>Confirm Password</label>
                         <input class="form-control-sm" type="password" placeholder="Confirm password" name="user[password_confirmation]">
@@ -49,7 +52,7 @@
             <div class='col-6'>
             <div class='login px-2'>
               <h3 class='my-3'>Login</h3>
-              <form method="post" action="/login">
+              <form method="post" action="/sessions">
                 <div class="form-group row">
                   <div class='col-12 my-2'>
                     <label>Email</label>
